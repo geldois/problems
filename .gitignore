@@ -55,3 +55,6 @@ typescript
 
 # Generated artifacts
 scripts/output
+
+# drafts
+drafts/
