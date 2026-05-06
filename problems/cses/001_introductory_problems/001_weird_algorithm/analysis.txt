@@ -6,4 +6,4 @@ INSIGHT
 
 COMPLEXITY
 - time: unknown (depends on Collatz sequence length)
-- space: O(1) auxiliary
+- space: O(1)

@@ -1,3 +1,23 @@
+[project]
+name = "dsa"
+version = "0.0.1"
+description = "A structured system for mastering algorithms and data structures"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "commitizen",
+  "pre-commit",
+  "ruff"
+]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "v$version"
+version_scheme = "semver"
+version_provider = "pep621"
+update_map_pyproject = true
+
 [tool.ruff]
 line-length = 88
 indent-width = 4
@@ -9,3 +29,6 @@ indent-style = "space"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.setuptools]
+packages = []
