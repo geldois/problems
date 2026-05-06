@@ -1,15 +1,14 @@
-// Given a null-terminated string, reverse it in place using only pointer manipulation.
+// Given a null-terminated string, reverse it in place using only pointer
+// manipulation.
 
 #include <stdio.h>
 #include <stdlib.h>
 
-void reverse(char *string)
-{
+void reverse(char *string) {
     char *start = string;
     char *end = NULL;
 
-    while (*start != '\0')
-    {
+    while (*start != '\0') {
         end = start;
 
         start++;
@@ -18,8 +17,7 @@ void reverse(char *string)
     start = string;
     char tmp;
 
-    while (start < end)
-    {
+    while (start < end) {
         tmp = *start;
         *start = *end;
         *end = tmp;
@@ -29,8 +27,7 @@ void reverse(char *string)
     }
 }
 
-int main()
-{
+int main() {
     char *string = malloc(sizeof(char) * 100);
     scanf("%99s", string);
 

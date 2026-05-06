@@ -1,6 +1,6 @@
 # dsa
 
-A structured system for mastering algorithms and data structures through fundamental implementations and deliberate problem solving.
+A structured system for mastering algorithms and data structures.
 
 ## Philosophy
 
@@ -62,7 +62,25 @@ This is a long-term repository.
 
 ## Run
 
+### On Linux
+
 ```bash
+# clone repository
+git clone https://github.com/geldois/dsa.git && cd dsa
+
+# create virtual environment and install dependencies
+python3 -m venv .venv && source .venv/bin/activate && pip install -e ".[dev]"
+```
+
+### On Windows
+
+```bash
+# clone repository
 git clone https://github.com/geldois/dsa.git
 cd dsa
+
+# create virtual environment and install dependencies
+python -m venv .venv
+.venv\Scripts\Activate
+pip install -e ".[dev]"
 ```

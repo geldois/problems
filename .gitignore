@@ -50,11 +50,7 @@ Thumbs.db
 # Docker
 docker-data/
 
-# Linux
-typescript
-
-# Generated artifacts
-scripts/output
-
-# drafts
+##########
 drafts/
+scripts/output
+typescript
