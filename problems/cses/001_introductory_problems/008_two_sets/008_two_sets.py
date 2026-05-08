@@ -11,7 +11,7 @@ else:
 
     target = total // 2
 
-    first_set = set()
+    first_set: set[int] = set()
 
     for i in range(1, ((n + 1) // 2) + 1):
         if target >= i + (n + 1 - i):

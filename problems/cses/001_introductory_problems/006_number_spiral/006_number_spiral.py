@@ -1,7 +1,7 @@
 # https://cses.fi/problemset/task/1071
 
 t = int(input())
-numbers = []
+numbers: list[int] = []
 i = 0
 
 while i < t:

@@ -4,8 +4,8 @@
 def solve(string: str) -> str:
     n = len(string)
 
-    chars = {}
-    odd_chars = set()
+    chars: dict[str, int] = {}
+    odd_chars: set[str] = set()
 
     for char in string:
         chars[char] = chars.get(char, 0) + 1
@@ -18,7 +18,7 @@ def solve(string: str) -> str:
     if (n % 2 == 0 and len(odd_chars) != 0) or (n % 2 and len(odd_chars) != 1):
         return "NO SOLUTION"
 
-    palindrome = []
+    palindrome: list[str] = []
 
     for char, count in chars.items():
         for _ in range(count // 2):
